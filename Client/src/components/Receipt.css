@@ -1,0 +1,48 @@
+/* src/Receipt.css */
+
+.receipt-container {
+    text-align: center;
+    background-color: white;  
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    
+
+
+   
+  }
+  
+  .receipt {
+    width: 56%;
+    margin:20px auto;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+
+    box-shadow:2px 5px 5px black;
+    font-family: Arial, sans-serif;
+  
+  }
+
+  .receipt-header  h2{
+    padding: 10px;
+  }
+  
+  .receipt-header, .receipt-body, .receipt-footer {
+    margin: 40px;
+  
+  }
+  
+  .btn {
+    display: block;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
