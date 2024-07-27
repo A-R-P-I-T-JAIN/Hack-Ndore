@@ -5,11 +5,13 @@ import Home from './components/Home'
 import DashBoard from './components/DashBoard'
 import Login from './components/Login'
 import Register from './components/Register'
+import Navbar2 from './components/Navbar2'
 
 function App() {
 
   return (
     <BrowserRouter>
+    
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/dashboard' element={<DashBoard/>} />
