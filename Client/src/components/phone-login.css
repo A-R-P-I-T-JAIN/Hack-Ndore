@@ -1,0 +1,40 @@
+*{
+    font-size: x-large;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    border-radius: 20px;
+
+}
+.submit{
+    background-color: rgb(34, 106, 179);
+    color: aliceblue;
+    height: 2rem;
+    width: 6rem;
+    border-radius: 14px;
+    
+}
+
+.id{
+    border:1px solid black;
+    padding: 4px;
+    border-radius: 5px;
+}
+.num{
+    border:1px solid black;
+    padding: 4px;
+    border-radius: 5px;
+    margin:2rem;
+}
+.verify{
+ margin-top: 60px;
+ height:45px;
+ width:180px;
+ border-radius:5px;
+ border:1px solid black;
+}
+.verify:hover{
+    background-color: rgb(167, 170, 174);
+}
+.text{
+    padding-bottom: 30px;
+}
