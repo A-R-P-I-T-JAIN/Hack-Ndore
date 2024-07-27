@@ -61,6 +61,11 @@ const propertySchema = new mongoose.Schema({
         type: Number,
         required: true,
         default: 1
+    },
+    totalPayment: {
+        type: Number,
+        required: true,
+        default: 0
     }
 })
 

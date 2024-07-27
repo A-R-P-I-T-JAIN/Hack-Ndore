@@ -18,7 +18,6 @@ app.use(
       useDefaults: true,
       directives: {
         "script-src": ["'self'", "'unsafe-inline'"], // Allows inline scripts
-        // Add additional sources as needed
       },
     },
   })
@@ -47,14 +46,39 @@ app.get('/', (req, res) => {
 
 app.post('/addProperty', async (req, res) => {
   try {
-    console.log("2")
     const newProperty = new Property(req.body);
     const savedProperty = await newProperty.save();
-    console.log("3")
     res.status(201).json(savedProperty);
-    console.log("4")
   } catch (error) {
     res.status(400).json({ error: error.message });
+  }
+});
+
+app.post('/verifyPropertyAndSendOtp', async (req, res) => {
+  const { phoneNumber, propertyId } = req.body;
+
+  try {
+    // Verify if the property ID exists
+    const property = await Property.findOne({ propertyId });
+
+    if (!property) {
+      return res.status(404).json({ success: false, message: 'Property not found' });
+    }
+
+    if (property.mobile !== phoneNumber) {
+      return res.status(400).json({ success: false, message: 'Phone number does not match' });
+    }
+
+    // Generate a random 4-digit OTP
+    const otp = Math.floor(1000 + Math.random() * 9000).toString();
+
+    // Simulate sending OTP (for example, log it)
+    console.log(`OTP for property ${propertyId}: ${otp}`);
+
+    // Respond with success and the OTP (for testing)
+    res.status(200).json({ success: true, otp: otp,property });
+  } catch (error) {
+    res.status(500).json({ success: false, message: 'An error occurred', error: error.message });
   }
 });
 
