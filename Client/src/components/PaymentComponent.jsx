@@ -1,8 +1,11 @@
 import React, { useState } from 'react';
 import './PaymentComponent.css'; // Assuming you have a separate CSS file for styling
-import { faCreditCard, faUniversity, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { useNavigate } from 'react-router-dom';
+import Navbar2 from './Navbar2';
+// import { faCreditCard, faUniversity, faMobileAlt } from '@fortawesome/free-solid-svg-icons';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const PaymentComponent = () => {
+  const navigate = useNavigate();
   const [selectedPaymentMethod, setSelectedPaymentMethod] = useState('');
 
   const handlePaymentMethodChange = (event) => {
@@ -11,9 +14,12 @@ const PaymentComponent = () => {
 
   const handlePayment = () => {
     alert(`Selected Payment Method: ${selectedPaymentMethod}`);
+    navigate('/receipt')
   };
 
   return (
+    <>
+    <Navbar2 />
     <div className="payment-container">
       <h2>Payment</h2>
       <p>How would you like to pay?</p>
@@ -28,7 +34,7 @@ const PaymentComponent = () => {
           />
           Card Payment
         </label>
-        <FontAwesomeIcon icon={faCreditCard} className='font' />
+        {/* <FontAwesomeIcon icon={faCreditCard} className='font' /> */}
       </div>
 
       <div className="payment-method">
@@ -41,7 +47,7 @@ const PaymentComponent = () => {
           />
           Net Banking
         </label>
-        <FontAwesomeIcon icon={faUniversity} className='font' />
+        {/* <FontAwesomeIcon icon={faUniversity} className='font' /> */}
       </div>
 
       <div className="payment-method">
@@ -54,7 +60,7 @@ const PaymentComponent = () => {
           />
           UPI Payment
         </label>
-        <FontAwesomeIcon icon={faMobileAlt} className='font' />
+        {/* <FontAwesomeIcon icon={faMobileAlt} className='font' /> */}
         {selectedPaymentMethod === 'UPI Payment' && (
           <select onChange={handlePaymentMethodChange}>
             <option value="">Select UPI App</option>
@@ -72,6 +78,7 @@ const PaymentComponent = () => {
         Make Payment
       </button>
     </div>
+    </>
   );
 };
 

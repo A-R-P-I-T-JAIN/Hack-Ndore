@@ -4,6 +4,7 @@ import React from 'react';
 // import jsPDF from 'jspdf';
 // import html2canvas from 'html2canvas';
 import './Receipt.css';
+import Navbar2 from './Navbar2';
 
 const Receipt = () => {
 //   const downloadReceipt = () => {
@@ -17,20 +18,22 @@ const Receipt = () => {
 //   };
 
   return (
+    <>
+    <Navbar2 />
     <div className="receipt-container">
       <div className="receipt" id="receipt">
         <div className="receipt-header">
-          <h2>Payment Receipt</h2>
-          <p>Receipt #: 12345</p>
-          <p>Date: 2024-07-27</p>
+          <h2 style={{fontSize:"25px"}} >Payment Receipt</h2>
+          <p style={{fontSize:"20px"}} >Receipt #: 12345</p>
+          <p style={{fontSize:"20px"}} >Date: 2024-07-27</p>
         </div>
         <div className="receipt-body">
-          <p><strong>Paid by:</strong> John Doe</p>
-          <p><strong>Property ID:</strong> ABC123</p>
-          <p><strong>Payment Method:</strong> Credit Card</p>
-          <p><strong>Taxes:</strong> $500.00</p>
-          <p><strong>Penalty:</strong> $500.00</p>
-          <p><strong>Total amount:</strong> $1000.00</p>
+          <p style={{fontSize:"20px"}} ><strong>Paid by:</strong> John Doe</p>
+          <p style={{fontSize:"20px"}} ><strong>Property ID:</strong> ABC123</p>
+          <p style={{fontSize:"20px"}} ><strong>Payment Method:</strong> Credit Card</p>
+          <p style={{fontSize:"20px"}} ><strong>Taxes:</strong> $500.00</p>
+          <p style={{fontSize:"20px"}} ><strong>Penalty:</strong> $500.00</p>
+          <p style={{fontSize:"20px"}} ><strong>Total amount:</strong> $1000.00</p>
 
 
         </div>
@@ -40,6 +43,7 @@ const Receipt = () => {
       </div>
       <button className="btn" >Download Receipt</button>
     </div>
+    </>
   );
 }
 

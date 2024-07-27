@@ -33,7 +33,7 @@ body {
     padding: 2rem;
   }
   
-  h1 {
+  .info h1 {
     color: #333;
   }
   
@@ -47,10 +47,6 @@ body {
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
-  }
-  img{
-    width:430px;
-    margin-top:10px;
   }
   
   li:hover {
@@ -87,15 +83,15 @@ body {
     display: flex;
     flex-direction: column;
   }
-  a{
+  .test a{
     padding: 3px;
     background-color: rgb(86, 157, 228);
   }
-  a:hover{
+  .test a:hover{
     color: #6a6565;
   }
   
-  .dashboard h1, p{
+  .dashboard h1,.dashboard p{
   font-size: 25px;
   padding: 8px 0;
   color: black;

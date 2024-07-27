@@ -67,14 +67,20 @@ const DashBoard = () => {
     <Navbar/>   <div className='main_dash' style={{
       position: "relative",
     }}>
-      {/* <div className="tax_estimatorr" style={{
-        display: show?"block":"none",
+      <div className="tax_estimatorr" style={{
+        display: show?"flex":"none",
+        justifyContent:"center",
+        alignItems:"center",
+        width:"100vw",
+        height:"100vh",
         position:"absolute",
-        top: "50%",
-        left:"50%",
+        top: "0%",
+        left:"0%",
+        backgroundColor:"#09090939",
+        backdropFilter:"blur(10px)"
       }}>
-        <TaxEstimator />
-      </div> */}
+        <TaxEstimator setShow={setShow} />
+      </div>
       <div className={styles.overview}>
         <h2 className={styles.heading}>Overview</h2>
         <div className={styles.summary}>
@@ -119,8 +125,9 @@ const DashBoard = () => {
               <p style={{
                 color:"black",
                 fontWeight:700,
-                cursor:"pointer"
-              }} >details</p>
+                cursor:"pointer",
+                
+              }} onClick={() => setShow(!show)} >details</p>
             }
             </div>
           </div>
@@ -144,7 +151,7 @@ const DashBoard = () => {
                 color:"black",
                 fontWeight:700,
                 cursor:"pointer"
-              }} >details</p>
+              }} onClick={() => setShow(!show)} >details</p>
             }
               
             </div>
@@ -169,7 +176,7 @@ const DashBoard = () => {
                 color:"black",
                 fontWeight:700,
                 cursor:"pointer"
-              }} >details</p>
+              }} onClick={() => setShow(!show)} >details</p>
             }
               
             </div>

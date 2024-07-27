@@ -1,8 +1,11 @@
 import React from 'react';
 import './HelpAndSupport.css';
+import Navbar2 from './Navbar2';
 
 const HelpAndSupport = () => {
   return (
+    <>
+    <Navbar2 />
     <div className="help-support">
       <h1>Municipal Tax Payment Help and Support</h1>
       
@@ -74,6 +77,7 @@ const HelpAndSupport = () => {
         </ul>
       </section>
     </div>
+    </>
   );
 }
 

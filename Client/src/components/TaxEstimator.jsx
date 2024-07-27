@@ -2,8 +2,10 @@ import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import "react-datepicker/dist/react-datepicker.css";
 import './TaxEstimator.css';
+import { useNavigate } from 'react-router-dom';
 
-const TaxEstimator = () => {
+const TaxEstimator = ({setShow}) => {
+  const navigate = useNavigate();
   const [selectedDate, setSelectedDate] = useState(new Date());
   const [estimatedTax, setEstimatedTax] = useState(0);
 
@@ -38,14 +40,15 @@ const TaxEstimator = () => {
       </section>
       <section className='estimated-tax'>
         <h2>Estimated Tax</h2>
-        <p>Base Tax Amount: ${baseTaxAmount}</p>
-        <p>Selected Date: {selectedDate.toDateString()}</p>
-        <p>Due Date: {dueDate.toDateString()}</p>
-        <p>Estimated Total Tax (including penalties): ${estimatedTax.toFixed(2)}</p>
+        <p style={{fontSize:"20px"}} >Base Tax Amount: ${baseTaxAmount}</p>
+        <p style={{fontSize:"20px"}} >Selected Date: {selectedDate.toDateString()}</p>
+        <p style={{fontSize:"20px"}} >Due Date: {dueDate.toDateString()}</p>
+        <p style={{fontSize:"20px"}} >Estimated Total Tax (including penalties): ${estimatedTax.toFixed(2)}</p>
       </section>
 
       
-        <button  className="pay_now">Pay Now</button>
+        <button  className="pay_now" onClick={() => navigate('/payment')}>Pay Now</button>
+        <button onClick={() => setShow(false)} >Close</button>
       
     </div>
   );

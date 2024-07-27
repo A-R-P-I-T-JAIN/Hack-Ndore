@@ -9,6 +9,9 @@ import DashBoard2 from './components/Dashboard2'
 import Navbar2 from './components/Navbar2'
 import Dashboard2 from './components/Dashboard2'
 import DashBoard from './components/Dashboard'
+import PaymentComponent from "./components/PaymentComponent"
+import Receipt from "./components/Receipt"
+import HelpAndSupport from './components/HelpAndSupport'
 
 function App() {
 
@@ -22,6 +25,9 @@ function App() {
       <Route path='/login' element={<Login/>} />
       <Route path='/register' element={<Register/>} />
       <Route path='/admin/*' element={<Admin/>}/>
+      <Route path='/payment' element={<PaymentComponent/>}/>
+      <Route path='/receipt' element={<Receipt/>}/>
+      <Route path='/help' element={<HelpAndSupport/>}/>
     </Routes>
     </BrowserRouter>
     
