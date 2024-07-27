@@ -1,0 +1,70 @@
+/* TaxOverview.module.css */
+.dashboard {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .overview {
+    margin-bottom: 20px;
+  }
+  
+  .overview h2 {
+    font-size: 1.5em;
+    color: #333;
+  }
+  
+  .taxBreakdown {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px; 
+    justify-content: space-around;
+  }
+  
+  .card {
+    /* background-color: #fff; */
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 420px;
+    /* width: calc(50% - 20px); */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+  }
+  
+  .card h1 {
+    
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 1em;
+    color: #666;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+  }
+  
+
+  .card1{
+    background-color: rgb(251, 110, 110);
+  }
+
+  .card2{
+    background-color:rgb(196, 196, 245);
+
+  }
+
+  .card3{
+    background-color: rgb(150, 254, 150);
+  }
+
+  .card4{
+    background-color: rgb(251, 159, 248);
+  }
+  .insideDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
