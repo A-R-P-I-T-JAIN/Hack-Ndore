@@ -1,6 +1,6 @@
 import './Admin.css';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Dashboard from './Dashboard';
+import Dashboard2 from './Dashboard2';
 import MembersList from './MembersList';
 import MembersListW from './MembersListW';
 import MembersListG from './MembersListG';
@@ -13,7 +13,7 @@ export default function Admin() {
       <div>
         <Navbars/>
         <Routes>
-          <Route path="/" element={<Dashboard />} />
+          <Route path="/" element={<Dashboard2/>} />
           <Route path="/members" element={<MembersList />} />
           <Route path="/membersW" element={<MembersListW/>}/>
           <Route path="/membersG" element={<MembersListG/>}/>

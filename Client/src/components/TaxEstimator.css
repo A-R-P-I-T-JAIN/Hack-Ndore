@@ -1,0 +1,61 @@
+.tax-estimator {
+    font-family: Arial, sans-serif;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .tax-estimator h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .tax-estimator section {
+    margin-bottom: 10px;
+  }
+  
+  .tax-estimator h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .tax-estimator p {
+    margin: 5px 0;
+  }
+
+  .calender{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+  }
+
+
+  .date_pick{
+    padding: 5px;
+    border-radius: 3px;
+  }
+  .pay_now{
+    padding: 10px 12px;
+    border: 1px solid black;
+    background-color:rgb(245, 112, 112) ;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    width: 80%;
+  }
+  
+
+  .estimated-tax{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2px;
+
+}

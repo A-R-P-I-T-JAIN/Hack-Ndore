@@ -1,6 +1,6 @@
-import {useEffect, useRef, useState} from "react";
+import { useEffect, useRef, useState } from "react";
 
-const OtpInput = ({length = 4, onOtpSubmit = () => {}}) => {
+const OtpInput = ({ length = 4, onOtpChange = () => {} }) => {
   const [otp, setOtp] = useState(new Array(length).fill(""));
   const inputRefs = useRef([]);
 
@@ -15,13 +15,12 @@ const OtpInput = ({length = 4, onOtpSubmit = () => {}}) => {
     if (isNaN(value)) return;
 
     const newOtp = [...otp];
-    // allow only one input
+    // Allow only one input
     newOtp[index] = value.substring(value.length - 1);
     setOtp(newOtp);
 
-    // submit trigger
-    const combinedOtp = newOtp.join("");
-    if (combinedOtp.length === length) onOtpSubmit(combinedOtp);
+    // Call onOtpChange to pass the OTP back to the parent component
+    onOtpChange(newOtp.join(""));
 
     // Move to next input if current field is filled
     if (value && index < length - 1 && inputRefs.current[index + 1]) {
@@ -32,7 +31,7 @@ const OtpInput = ({length = 4, onOtpSubmit = () => {}}) => {
   const handleClick = (index) => {
     inputRefs.current[index].setSelectionRange(1, 1);
 
-    // optional
+    // Optional
     if (index > 0 && !otp[index - 1]) {
       inputRefs.current[otp.indexOf("")].focus();
     }
@@ -51,10 +50,9 @@ const OtpInput = ({length = 4, onOtpSubmit = () => {}}) => {
   };
 
   return (
-    <div class="main">
+    <div className="main">
       {otp.map((value, index) => {
         return (
-          <>
           <input
             key={index}
             type="text"
@@ -63,9 +61,8 @@ const OtpInput = ({length = 4, onOtpSubmit = () => {}}) => {
             onChange={(e) => handleChange(index, e)}
             onClick={() => handleClick(index)}
             onKeyDown={(e) => handleKeyDown(index, e)}
-            class="otpInput"
+            className="otpInput"
           />
-       </>
         );
       })}
     </div>

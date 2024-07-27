@@ -6,7 +6,7 @@ function Navbars() {
     <nav>
       <ul>
         <li><Link to="/admin">Dashboard</Link></li>
-        <li><Link to="/admin/members">Members</Link></li>
+        {/* <li><Link to="/admin/">Members</Link></li> */}
       </ul>
     </nav>
   );
