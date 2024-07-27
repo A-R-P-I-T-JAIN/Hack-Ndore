@@ -6,6 +6,7 @@ import './Dashboard.css';
 import styles from './Overview.module.css'; // Import CSS module
 import styles1 from './TaxOverview.module.css'; // CSS module import
 import TaxEstimator from './TaxEstimator';
+import Navbar from './Navbar2';
 
 const DashBoard = () => {
   const dispatch = useDispatch();
@@ -62,7 +63,8 @@ const DashBoard = () => {
 
 
   return (
-    <div className='main_dash' style={{
+    <> 
+    <Navbar/>   <div className='main_dash' style={{
       position: "relative",
     }}>
       {/* <div className="tax_estimatorr" style={{
@@ -193,6 +195,7 @@ const DashBoard = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 
