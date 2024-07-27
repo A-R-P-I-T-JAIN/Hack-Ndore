@@ -26,7 +26,7 @@ const DashBoard = () => {
 
   const [totalTax, setTotalTax] = useState(0);
   const [alert, setAlert] = useState(0);
-  const[show,setShow] = useState(false);
+  const[show,setShow] = useState(true);
 
   useEffect(() => {
     if (property) {
@@ -72,6 +72,8 @@ const DashBoard = () => {
         position:"absolute",
         top: "50%",
         left:"50%",
+        zIndex:10,
+        transform:"translate(-50%,-50%)"
       }}>
         <TaxEstimator />
       </div>
