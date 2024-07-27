@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  nav {
+    color: rgb(11, 10, 10);
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+  
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    padding:0 85px;
+    gap: 1rem;
+  }
+  
+  nav a {
+    color: rgb(20, 19, 19);
+    text-decoration: none;
+    transition: color 0.2s;
+    width:200px;
+  }
+  
+  nav a:hover {
+    color:black;
+  }
+  
+  .container {
+    padding: 2rem;
+  }
+  
+  h1 {
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  img{
+    width:430px;
+    margin-top:10px;
+  }
+  
+  li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  .contain{
+    display: flex;
+    flex-direction: column;
+  }
+  .info{
+    display: flex;
+    width:100%;
+    height:100px;
+    color:rgb(50, 49, 49);
+    font-size: 30px;
+    padding: 10px;
+    align-content: center;
+    justify-content: space-between;
+    transition: transform 0.2s, box-shadow 0.2s;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);;
+    margin:6px;
+  }
+  .info:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .test{
+    /* background-color: rgb(86, 157, 228); */
+    background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  a{
+    padding: 3px;
+    background-color: rgb(86, 157, 228);
+  }
+  a:hover{
+    color: #6a6565;
+  }
+  
+  .dashboard h1, p{
+  font-size: 25px;
+  padding: 8px 0;
+  color: black;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  font-weight: 900;
+  }
+  .memberList, .memberListG, .memberListS,.memberListW{
+    border: 1px solid black;
+    /* background-color: rgb(227, 247, 247); */
+    background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
+    padding: 10px;
+  }
+  .memberList li{
+   height: 50px;
+   font-size: 25px;
+   background-color: rgb(200, 208, 208);
+   /* background-color: rgb(190, 97, 97); */
+  }
+  .memberList li:hover{
+    background-color: rgb(255, 65, 65);
+  }
+  .memberListG li{
+    height: 50px;
+    font-size: 25px;
+    background-color: rgb(190, 97, 97);
+   }
+   .memberListS li{
+    height: 50px;
+    font-size: 25px;
+    background-color: rgb(190, 97, 97);
+   }
+   .memberListW li{
+    height: 50px;
+    font-size: 25px;
+    background-color: rgb(190, 97, 97);
+   }
+  .memberList h1{
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+  .memberListS h1{
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+  .memberListG h1{
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+  .memberListW h1{
+    font-size: 25px;
+    padding: 10px;
+    margin-bottom: 50px;
+  }
+  .dashboard{
+    border: 3px solid rgb(55, 82, 234);
+    padding: 20px;
+  }
