@@ -67,14 +67,14 @@ const DashBoard = () => {
     <Navbar/>   <div className='main_dash' style={{
       position: "relative",
     }}>
-      {/* <div className="tax_estimatorr" style={{
+      <div className="tax_estimatorr" style={{
         display: show?"block":"none",
         position:"absolute",
         top: "50%",
         left:"50%",
       }}>
         <TaxEstimator />
-      </div> */}
+      </div>
       <div className={styles.overview}>
         <h2 className={styles.heading}>Overview</h2>
         <div className={styles.summary}>
