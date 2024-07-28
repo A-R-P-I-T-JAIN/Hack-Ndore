@@ -25,6 +25,10 @@
     cursor: pointer;
     color: #333;
   }
+<<<<<<< HEAD
+=======
+  
+>>>>>>> 851bea30b07c01d907efc4a3a047689884d3bb23
   .navbar {
     display: flex;
   justify-content: space-between;
@@ -37,8 +41,11 @@
   z-index: 10;
   transition: background 0.3s ease;
   }
+<<<<<<< HEAD
   
 
+=======
+>>>>>>> 851bea30b07c01d907efc4a3a047689884d3bb23
 
 
 .navbar-left {
