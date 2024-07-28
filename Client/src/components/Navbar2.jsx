@@ -31,6 +31,7 @@ const Navbar2 = () => {
         <span className="nav-item" onClick={() => navigate("/help")}>Help</span>
         <span className="nav-item" onClick={() => navigate("/transaction-history")}>Transaction History</span>
         <span className="nav-item" onClick={() => navigate("/dashboard")}>Dashboard</span>
+        <span className="nav-item" onClick={() => navigate("/feedback")}>Feedback</span>
       </div>
       <div className="navbar-right">
       <div className="icon-wrapper" onClick={toggleNotifications}>

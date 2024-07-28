@@ -16,6 +16,7 @@ import Receipt from "./components/Receipt"
 import HelpAndSupport from './components/HelpAndSupport'
 import Transaction from './components/Transaction_History'
 import { AuthProvider } from "./components/AuthContext";
+import FeedbackForm from './components/FeedbackForm'
 
 function App() {
 
@@ -34,6 +35,7 @@ function App() {
       <Route path='/receipt' element={<Receipt/>}/>
       <Route path='/help' element={<HelpAndSupport/>}/>
       <Route path='/transaction-history' element={<Transaction/>}/>
+      <Route path='/feedback' element={<FeedbackForm/>}/>
     </Routes>
     {isChatBoxVisible && <ChatBox onClose={() => setIsChatBoxVisible(false)} />}
     <ChatIcon onClick={() => setIsChatBoxVisible(true)} />
