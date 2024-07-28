@@ -29,8 +29,12 @@ const TaxEstimator = ({setShow}) => {
 
   return (
     <div className="tax-estimator">
-      <h1>Property Tax Estimator</h1>
-      <section className='calender'>
+      <h1 style={{fontSize:"25px"}} >Property Tax Estimator</h1>
+      <section className='calender' style={{
+        display: "flex",
+        alignItems:"center",
+        justifyContent:"center"
+      }}>
         <h2>Select Payment Date</h2>
         <DatePicker className='date_pick'
           selected={selectedDate} 
@@ -39,15 +43,15 @@ const TaxEstimator = ({setShow}) => {
         />
       </section>
       <section className='estimated-tax'>
-        <h2>Estimated Tax</h2>
-        <p style={{fontSize:"20px"}} >Base Tax Amount: ${baseTaxAmount}</p>
-        <p style={{fontSize:"20px"}} >Selected Date: {selectedDate.toDateString()}</p>
-        <p style={{fontSize:"20px"}} >Due Date: {dueDate.toDateString()}</p>
-        <p style={{fontSize:"20px"}} >Estimated Total Tax (including penalties): ${estimatedTax.toFixed(2)}</p>
+        <h2 style={{fontSize:"25px"}} >Estimated Tax</h2>
+        <p style={{fontSize:"20px",color:"#383737"}} >Base Tax Amount: ${baseTaxAmount}</p>
+        <p style={{fontSize:"20px",color:"#383737"}} >Selected Date: {selectedDate.toDateString()}</p>
+        <p style={{fontSize:"20px",color:"#383737"}} >Due Date: {dueDate.toDateString()}</p>
+        <p style={{fontSize:"20px",color:"#383737"}} >Estimated Total Tax (including penalties): ${estimatedTax.toFixed(2)}</p>
       </section>
 
       
-        <button  className="pay_now" onClick={() => navigate('/payment')}>Pay Now</button>
+        <button  className="pay_now" onClick={() => navigate('/payment')} style={{marginBottom:"10px"}}>Pay Now</button>
         <button onClick={() => setShow(false)} >Close</button>
       
     </div>
