@@ -14,6 +14,7 @@ import ChatBox from './components/Chatbox';
 import PaymentComponent from "./components/PaymentComponent"
 import Receipt from "./components/Receipt"
 import HelpAndSupport from './components/HelpAndSupport'
+import Transaction_History from './components/Transaction_History'
 
 function App() {
 
@@ -31,6 +32,7 @@ function App() {
       <Route path='/payment' element={<PaymentComponent/>}/>
       <Route path='/receipt' element={<Receipt/>}/>
       <Route path='/help' element={<HelpAndSupport/>}/>
+      <Route path='/transaction' element={<Transaction_History/>}/>
     </Routes>
     {isChatBoxVisible && <ChatBox onClose={() => setIsChatBoxVisible(false)} />}
     <ChatIcon onClick={() => setIsChatBoxVisible(true)} />
