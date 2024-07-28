@@ -1,7 +1,6 @@
 /* Navbar2.css */
 
 .navbar {
-<<<<<<< HEAD
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,9 +25,8 @@
     cursor: pointer;
     color: #333;
   }
-  
-=======
-  display: flex;
+  .navbar {
+    display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
@@ -38,8 +36,8 @@
   position: relative;
   z-index: 10;
   transition: background 0.3s ease;
-}
->>>>>>> 9617847e0af4996820a6d0c55273a0edeab458c2
+  }
+  
 
 
 

@@ -1,7 +1,6 @@
 body {
     font-family: Arial, sans-serif;
   }
-  
   nav {
     color: rgb(11, 10, 10);
     font-size: 35px;
@@ -82,6 +81,7 @@ body {
     font-size: 20px;
     display: flex;
     flex-direction: column;
+    padding-top: 5px;
   }
   .test a{
     padding: 3px;
@@ -102,32 +102,41 @@ body {
   .memberList, .memberListG, .memberListS,.memberListW{
     border: 1px solid black;
     /* background-color: rgb(227, 247, 247); */
+    width:60%;
     background: linear-gradient(90deg, #00d2ff 0%, #3a47d5 100%);
     padding: 10px;
+    margin-top: 40px;
+    margin-left: 250px;
+    box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1),
+  0 8px 16px rgba(0, 0, 0, 0.1),
+  0 16px 32px rgba(0, 0, 0, 0.1),
+  0 32px 64px rgba(0, 0, 0, 0.1);
   }
-  .memberList li{
+  .memberList li,.memberListG li,.memberListS li,.memberListW li{
    height: 50px;
    font-size: 25px;
+   padding-left: 6px;
+   margin-bottom: 10px;
    background-color: rgb(200, 208, 208);
    /* background-color: rgb(190, 97, 97); */
   }
   .memberList li:hover{
-    background-color: rgb(255, 65, 65);
+    background-color:rgb(236, 63, 63);
   }
-  .memberListG li{
+  .memberListG li:hover{
     height: 50px;
     font-size: 25px;
-    background-color: rgb(190, 97, 97);
+    background-color:rgb(236, 63, 63);
    }
-   .memberListS li{
+   .memberListS li:hover{
     height: 50px;
     font-size: 25px;
-    background-color: rgb(190, 97, 97);
+    background-color:rgb(236, 63, 63);
    }
-   .memberListW li{
+   .memberListW li:hover{
     height: 50px;
     font-size: 25px;
-    background-color: rgb(190, 97, 97);
+    background-color:rgb(236, 63, 63);
    }
   .memberList h1{
     font-size: 25px;
@@ -150,6 +159,24 @@ body {
     margin-bottom: 50px;
   }
   .dashboard{
-    border: 3px solid rgb(55, 82, 234);
-    padding: 20px;
+    border: 2px solid rgb(11, 11, 15);
+   margin: 50px;
+  display: flex;
+  padding-bottom: 20px;
+  flex-direction: column;
+  border-radius: 3px;
+  /* justify-content: center; */
+  align-items: center;
+  width:920px;
+  margin: 20px auto;
+  box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1),
+  0 8px 16px rgba(0, 0, 0, 0.1),
+  0 16px 32px rgba(0, 0, 0, 0.1),
+  0 32px 64px rgba(0, 0, 0, 0.1);
+  }
+
+  .user-analysis-info{
+    width: 100%;
+    margin-left: 150px;
+    
   }

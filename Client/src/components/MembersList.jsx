@@ -12,7 +12,7 @@ function MembersList() {
       <h1>Members List</h1>
       <ul>
         {members.map(member => (
-          <li key={member.id}>{member.name}</li>
+          <li key={member.id}>{member.name}(Property ID{ member.id})</li>
         ))}
       </ul>
     </div>

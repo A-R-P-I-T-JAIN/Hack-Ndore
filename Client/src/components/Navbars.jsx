@@ -5,7 +5,7 @@ function Navbars() {
   return (
     <nav>
       <ul>
-        <li><Link to="/admin">Dashboard</Link></li>
+        <li style={{fontSize:"40px",marginTop:"10px"}}><Link to="/admin">Dashboard</Link></li>
         {/* <li><Link to="/admin/">Members</Link></li> */}
       </ul>
     </nav>
