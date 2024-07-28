@@ -51,7 +51,8 @@ export default function Register() {
   };
 
   return (
-    <div className="boxi">
+    <div className="register-body">
+      <div className="boxi">
       <p className="head">Register</p>
       <form onSubmit={handleSubmit}>
         <input
@@ -91,6 +92,7 @@ export default function Register() {
         <br />
         <Link to="/login">Already registered? Click here to <span>login</span></Link>
       </div>
+    </div>
     </div>
   );
 }

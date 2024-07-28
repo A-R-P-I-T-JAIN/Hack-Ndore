@@ -42,14 +42,14 @@ body {
     padding: 0;
   }
   
-  li {
+  .memberList,.memberListG,.memberListS,.memberListW li {
     margin-bottom: 1rem;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.2s, box-shadow 0.2s;
   }
   
-  li:hover {
+  .memberList,.memberListG,.memberListS,.memberListW li:hover {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
@@ -59,7 +59,7 @@ body {
   }
   .info{
     display: flex;
-    width:100%;
+    width:80%;
     height:100px;
     color:rgb(50, 49, 49);
     font-size: 30px;
@@ -69,7 +69,7 @@ body {
     transition: transform 0.2s, box-shadow 0.2s;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background: linear-gradient(90deg, #00C9FF 0%, #92FE9D 100%);;
-    margin:6px;
+    margin:8px;
   }
   .info:hover {
     transform: translateY(-5px);

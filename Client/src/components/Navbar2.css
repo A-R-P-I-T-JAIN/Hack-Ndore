@@ -1,6 +1,33 @@
 /* Navbar2.css */
 
 .navbar {
+<<<<<<< HEAD
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 20px;
+    background-color: rgb(17, 34, 128);
+    
+    border-bottom: 1px solid #dee2e6;
+    margin-bottom: 30px;
+    
+  }
+  .navbar-left .nav-item {
+    margin-right: 20px;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  
+  .navbar-right .icon {
+    margin-left: 20px;
+    font-size: 22px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+=======
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,6 +39,7 @@
   z-index: 10;
   transition: background 0.3s ease;
 }
+>>>>>>> 9617847e0af4996820a6d0c55273a0edeab458c2
 
 
 
