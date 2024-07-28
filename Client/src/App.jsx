@@ -15,13 +15,14 @@ import PaymentComponent from "./components/PaymentComponent"
 import Receipt from "./components/Receipt"
 import HelpAndSupport from './components/HelpAndSupport'
 import Transaction from './components/Transaction_History'
+import { AuthProvider } from "./components/AuthContext";
 
 function App() {
 
   const [isChatBoxVisible, setIsChatBoxVisible] = useState(false);
   return (
     <BrowserRouter>
-    
+    <AuthProvider>
     <Routes>
       <Route path='/' element={<Home/>} />
       <Route path='/dashboard2' element={<DashBoard2/>} />
@@ -36,6 +37,7 @@ function App() {
     </Routes>
     {isChatBoxVisible && <ChatBox onClose={() => setIsChatBoxVisible(false)} />}
     <ChatIcon onClick={() => setIsChatBoxVisible(true)} />
+    </AuthProvider>
     </BrowserRouter>
     
   )
