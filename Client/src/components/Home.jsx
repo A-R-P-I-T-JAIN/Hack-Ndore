@@ -6,7 +6,7 @@ import Footer from "./Footer";
 import About from "./About";
 import HomeUpdates from "./HomeUpdates";
 import TaxDashboard from "./TaxDashboard";
-// import ChatIcon from "./ChatIcon";
+import ChatIcon from "./ChatIcon";
 import Navbar2 from "./Navbar2"
 
 
@@ -16,6 +16,7 @@ const Home = () => {
     <div >
       <Navbar2 />
       <Slider />
+      <ChatIcon/>
       <PropertyGallery />
       <HomeUpdates />
       <TaxDashboard />

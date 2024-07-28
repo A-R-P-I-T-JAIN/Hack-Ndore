@@ -9,12 +9,16 @@ import DashBoard2 from './components/Dashboard2'
 import Navbar2 from './components/Navbar2'
 import Dashboard2 from './components/Dashboard2'
 import DashBoard from './components/Dashboard'
+import ChatIcon from './components/ChatIcon'; // Ensure correct path
+import ChatBox from './components/Chatbox';
 import PaymentComponent from "./components/PaymentComponent"
 import Receipt from "./components/Receipt"
 import HelpAndSupport from './components/HelpAndSupport'
+import Transaction_History from './components/Transaction_History'
 
 function App() {
 
+  const [isChatBoxVisible, setIsChatBoxVisible] = useState(false);
   return (
     <BrowserRouter>
     
@@ -28,7 +32,10 @@ function App() {
       <Route path='/payment' element={<PaymentComponent/>}/>
       <Route path='/receipt' element={<Receipt/>}/>
       <Route path='/help' element={<HelpAndSupport/>}/>
+      <Route path='/transaction' element={<Transaction_History/>}/>
     </Routes>
+    {isChatBoxVisible && <ChatBox onClose={() => setIsChatBoxVisible(false)} />}
+    <ChatIcon onClick={() => setIsChatBoxVisible(true)} />
     </BrowserRouter>
     
   )

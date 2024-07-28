@@ -58,7 +58,7 @@ function Slider() {
   };
 
   return (
-    <div className="relative w-full max-w-[1400px] h-[400px] m-auto py-9 px-8 group">
+    <div className="relative w-full max-w-[1400px] h-[450px] m-auto py-9 px-8 group">
       <div className="relative w-full h-full overflow-hidden rounded-2xl">
         <img
           src={slides[currentIndex].url}
