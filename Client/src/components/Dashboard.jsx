@@ -94,7 +94,7 @@ const DashBoard = () => {
           </div>
           <div className={styles.summaryItem}>
             <span className={styles.label}>Pending Payments:</span>
-            <span className={styles.value}>$X,XXX</span>
+            <span className={styles.value}>$1035</span>
           </div>
           <div className={styles.summaryItem}>
             <span className={styles.label}>Alerts:</span>
@@ -196,6 +196,11 @@ const DashBoard = () => {
                 padding:"10px",
                 borderRadius:"5px"
               }} >Unpaid</p>}</div>
+              <p style={{
+                color:"black",
+                fontWeight:700,
+                cursor:"pointer"
+              }} onClick={() => setShow(!show)} >details</p>
             </div>
 
           </div>
